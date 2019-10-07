@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulier 2</title>
+</head>
+
+<body>
+    <h1>Gelieve onderstaand formulier in te vullen</h1>
+    <h3>
+        Alle gegevens worden vertrouwelijk behandeld.
+    </h3>
+    <form action="mailto:naam@hogent.be?subject=aanvraag" method="post" enctype="text/plain">
+        <p>
+            <label for="naam">Naam:</label>
+            <input type="text" name="naam" id="naam" placeholder="voornaam familienaam" required size="40" />
+        </p>
+
+        <p>
+            <label for="geboorte">Geboorte datum:</label>
+            <input type="date" name="geboorteDatum" id="geboorte" required size="40" />
+        </p>
+
+        <p>
+            <label for="land">Land:</label>
+            <select name="land" id="land" required>
+                <option value="">--Favoriete vakantieland--</option>
+                <option value="be">België</option>
+                <option value="nl">Nederland</option>
+                <option value="de">Duitsland</option>
+                <option value="fr">Frankrijk</option>
+                <option value="it">Italië</option>
+                <option value="es">Spanje</option>
+            </select>
+        </p>
+        <p>Gender:<br/>
+            <label for="female">Vrouw:</label>
+            <input type="radio" id="female" name="gender" value="vrouw" checked><br/>
+            <label for="male">Man:</label>
+            <input type="radio" id="male" name="gender" value="man"><br/>
+            <label for="unknown">Neutral:</label>
+            <input type="radio" id="unknown" name="gender" value="onbekend"><br/>
+        </p>
+        <p>
+            <input type="submit" name="verzenden" id="verzenden" value="Verzenden" />
+        </p>
+    </form>
+</body>
+
+</html>
